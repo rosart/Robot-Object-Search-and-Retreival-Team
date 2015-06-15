@@ -1,0 +1,7 @@
+image: willow_garage.pgm
+resolution: 0.050000
+origin: [-2.550000, -4.700000, -nan]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
+

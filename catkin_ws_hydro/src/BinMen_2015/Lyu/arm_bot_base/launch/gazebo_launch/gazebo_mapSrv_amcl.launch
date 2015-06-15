@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<launch>
+
+
+  <node pkg="map_server" type="map_server" name="map_server" args="$(find turtlebot_nav)/smartlab-map/willow_garage.yaml"/>
+  <node pkg="amcl" type="amcl" name="amcl">
+	<remap from="base_scan" to="scan"/>
+	<param name="use_map_topic" value="true"/>
+	<param name="first_map_only" value="true"/>
+	<param name="initial_pose_x" value="-1.55"/>
+	<param name="initial_pose_y" value="4.11"/>
+	<param name="initial_pose_a" value="0.0"/>
+	<param name="update_min_d" value="0.1"/>
+	<param name="update_min_a" value="0.05"/>
+	<param name="resample_interval" value="1"/>
+  </node>
+  <include file="$(find arm_bot_base)/launch/gazebo_arm_bot_base.launch" />
+
+</launch>
+
