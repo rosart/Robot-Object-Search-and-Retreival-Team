@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <node name="bin_bot_base" pkg="bin_bot_base" type="bin_bot_base_xtion.py" output="screen">	
+	<!--param name="KpRot" value="0.1"/>
+	<param name="KdRot" value="0.02"/>
+	<param name="tol_z" value="0.0001"/>
+	<param name="tol_ang" value="0.3"/> 
+	<param name="min_z" value="0.0005"/--> 	
+  </node>
+
+</launch>
+	
