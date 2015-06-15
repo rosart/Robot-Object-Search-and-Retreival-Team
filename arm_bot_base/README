@@ -1,12 +1,12 @@
 arm_bot_base:
 =============
 
-Package contains all the scripts and launch files to be run on the Turtlebot 2 platform.
+Package contains all the scripts and launch files to be run on the Turtlebot 2 platform used for the Arm Bot.
 Distance sensing and colour blob detection can be performed with the use of any openni/openni2 supported 3d camera.
 
 ##Usage:
 
 * "colors" folder is a container for profiles which are invoked by cmvision
-* "launch" folder contains all the launch files required to initialize the Arm_Bot
+* "launch" folder contains all the launch files required to initialize the Arm Bot
 * "param" folder contains the ROS navigation parameters for the robot
 * "scripts" folder contains the nodes used to control the robot
