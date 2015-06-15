@@ -7,7 +7,7 @@ This is a package using the /blobs topic produced by cmvision, in addition to 3D
 See http://wiki.ros.org/cmvision_3d
 
 
-NOTE!!:
+##NOTE!!:
 This is a modified version of the original package described above. Future commits will link to the parent repository: 
 https://github.com/OSUrobotics/cmvision_3d
 
