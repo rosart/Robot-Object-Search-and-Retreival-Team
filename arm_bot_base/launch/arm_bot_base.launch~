@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <node name="arm_bot_base" pkg="arm_bot_base" type="arm_bot_base_kinect.py" output="screen">	
+	<!--param name="KpRot" value="1.0"/>
+	<param name="KdRot" value="0.2"/>
+	<param name="tol_z" value="0.0001"/>
+	<param name="tol_ang" value="0.2"/> 
+	<param name="min_z" value="0.0005"/--> 	
+  </node>
+
+</launch>
+	
