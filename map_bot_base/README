@@ -1,0 +1,11 @@
+map_bot_base:
+=============
+
+Package contains all the scripts and launch files to be run on the Turtlebot 2 platform used for the Map Bot.
+Distance sensing can be performed by any device that can provide laserscan data.
+
+##Usage:
+
+* "launch" folder contains all the launch files required to initialize the Map Bot
+* "param" folder contains the ROS navigation parameters for the robot
+* "scripts" folder contains the nodes used to control the robot
