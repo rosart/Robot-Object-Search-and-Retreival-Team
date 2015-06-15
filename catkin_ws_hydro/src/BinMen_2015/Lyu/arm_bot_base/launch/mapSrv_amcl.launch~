@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<launch>
+
+
+  <node pkg="map_server" type="map_server" name="map_server" args="$(find arm_bot_base)/smartlab-map/smartlab_map.yaml"/>
+  <node pkg="amcl" type="amcl" name="amcl">
+	<remap from="base_scan" to="scan"/>
+	<param name="use_map_topic" value="true"/>
+	<param name="first_map_only" value="true"/>
+	<!--param name="update_min_d" value="0.1"/>
+	<param name="update_min_a" value="0.267"/>
+	<param name="resample_interval" value="1"/-->	
+	<param name="initial_pose_x" value="4.5"/>
+        <param name="initial_pose_y" value="-2.4"/>
+        <param name="initial_pose_a" value="-3.0"/>
+  </node>
+  <include file="$(find arm_bot_base)/launch/arm_bot_base.launch"/>
+</launch>
+
